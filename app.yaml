@@ -1,0 +1,35 @@
+application: myrarecord
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /humans\.txt
+  static_files: humans.txt
+  upload: humans\.txt
+
+- url: /robots\.txt
+  static_files: robots.txt
+  upload: robots\.txt
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /order
+  static_files: views/order.html
+  upload: views/order\.html
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"

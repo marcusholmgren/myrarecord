@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head lang="sv-se">
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Myra Record</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <script src="js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+   <div class="row">
+    <div class="six columns offset-by-one">
+    <ul id="messageBox"></ul>
+        <fieldset>
+    <legend>Order formul&auml;r</legend>
+
+<form id="order" action="/api/order" method="post" class="custom">
+    <label for="Radio1">
+        <input type="radio" name="musik" value="CD2008-02" id="Radio1" checked="checked" style="display:none;" />
+        <span class="custom radio"></span> N&auml;cken vid b&auml;cken
+    </label>
+    <label for="Radio2">
+        <input type="radio" name="musik" value="CD2004-05" id="Radio2" />
+        <span class="custom radio"></span> Vilhelmina &#38; Malgomaj
+    </label>
+    <label for="Radio3">
+        <input type="radio" name="musik" value="BothCD" id="Radio3" />
+        <span class="custom radio"></span> B&aring;da CD-skivorna
+    </label>
+
+    <div>
+        <label for="firstname">Namn</label>
+        <div class="row">
+            <div class="six columns">
+                <input name="firstname" id="firstname" type="text" class="required" placeholder="f&ouml;rnamn" />
+            </div>
+            <div class="six columns">
+                <input name="lastname" id="lastname" type="text" class="required" placeholder="efternamn" />
+            </div>
+        </div>
+
+        <label for="adress" class="description">Adress</label>
+            <input name="adress" id="adress" type="text" size="40" class="required" placeholder="adress" />
+        <div class="row">
+            <div class="three columns">
+                <input name="postnummer" id="postnummer" type="number" maxlength="8" size="10" class="required" placeholder="postnummer" />
+            </div>
+            <div class="nine columns">
+                <input name="ort" id="ort" type="text" class="required" placeholder="ort" />
+            </div>
+        </div>
+        <span>
+            <label for="email" class="description">E-post</label>
+            <input name="email" id="email" type="email" size="40" class="required email" placeholder="e-post" />
+            <input name="email_validate" id="email_validate" type="email" size="40" class="required email" placeholder="bekr&auml;fta e-post" />
+        </span>
+        <label for="telefon" class="description">Telefon</label>
+        <div class="row">
+             <div class="six columns">
+                 <div class="row collapse">
+                     <div class="two mobile-one columns">
+                         <span class="prefix">#</span>
+                     </div>
+                     <div class="ten mobile-three columns">
+                <input name="telefon" id="Telefon" type="tel" class="required" />
+                         </div>
+             </div>
+             </div>
+        </div>
+
+
+        <label for="meddelande" class="description">Meddelande</label>
+        <div class="row">
+        <div class="twelve columns">
+            <textarea name="meddelande" id="Meddelande" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="four columns offset-by-two">
+            <input id="reset1" type="reset" value="Rensa" class="button secondary" />
+        </div>
+        <div class="five columns offset-by-one">
+            <input id="submit1" type="submit" value="Skicka" class="button" />
+        </div>
+    </div>
+    </div>
+</form>
+</fieldset>
+    </div>
+</div>
+    <p class="required">* obligatoriska f&auml;lt som m&aring;ste ifyllas</p>
+
+    <div class="row">
+    <div class="panel six offset-by-six columns">
+        Vid order s&auml;nds CD-skivorna med post till uppgiven adress  med ett inbetalningskort f&ouml;r best&auml;llningen.<br />
+            Skivorna distribueras av MYRA RECORD AB momsregnr. 556494-5250
+    </div>
+    </div>
+</div>
+
+<div class="row">
+<div class="centered four columns">copyright 2008-2009 Myra Record</div>
+</div>
+
+
+
+
+<div id="myModal" class="reveal-modal">
+    <h2>Awesome. I have it.</h2>
+    <p class="lead">Your couch. I it's mine.</p>
+    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+</div>
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="js/foundation.min.js"></script>
+  <!--
+
+  <script src="js/foundation/foundation.js"></script>
+
+  <script src="js/foundation/foundation.alerts.js"></script>
+
+  <script src="js/foundation/foundation.clearing.js"></script>
+
+  <script src="js/foundation/foundation.cookie.js"></script>
+
+  <script src="js/foundation/foundation.dropdown.js"></script>
+
+  <script src="js/foundation/foundation.forms.js"></script>
+
+  <script src="js/foundation/foundation.joyride.js"></script>
+
+  <script src="js/foundation/foundation.magellan.js"></script>
+
+  <script src="js/foundation/foundation.orbit.js"></script>
+
+  <script src="js/foundation/foundation.reveal.js"></script>
+
+  <script src="js/foundation/foundation.section.js"></script>
+
+  <script src="js/foundation/foundation.tooltips.js"></script>
+
+  <script src="js/foundation/foundation.topbar.js"></script>
+
+  <script src="js/foundation/foundation.interchange.js"></script>
+
+  <script src="js/foundation/foundation.placeholder.js"></script>
+
+  -->
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
